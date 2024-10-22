@@ -291,7 +291,22 @@ public enum Moves {
     }
 
     private void rotateL(Cube cube) {
-        // TODO
+        cube.getLeft().rotateClockwise();
+
+        Side sideToTheLeft = cube.getBack();
+        Side sideToTheTop = cube.getTop();
+        Side sideToTheRight = cube.getFront();
+        Side sideToTheBottom = cube.getBottom();
+
+        CubeColor[] leftEdge = sideToTheLeft.getColumn(cube.getSize() - 1);
+        CubeColor[] topEdge = sideToTheTop.getRow(cube.getSize() - 1);
+        CubeColor[] rightEdge = sideToTheRight.getColumn(0);
+        CubeColor[] bottomEdge = sideToTheBottom.getRow(0);
+
+        sideToTheLeft.setColumn(cube.getSize() - 1, bottomEdge);
+        sideToTheTop.setRow(cube.getSize() - 1,  CubeUtils.inverseArray(leftEdge));
+        sideToTheRight.setColumn(0, topEdge);
+        sideToTheBottom.setRow(0, CubeUtils.inverseArray(rightEdge));
     }
 
     private void rotateR(Cube cube) {
