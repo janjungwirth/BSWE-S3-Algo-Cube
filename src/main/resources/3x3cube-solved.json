@@ -1,0 +1,51 @@
+{
+  "size": 3,
+  "front": {
+    "color": "ORANGE",
+    "values": [
+      ["ORANGE", "ORANGE", "ORANGE"],
+      ["ORANGE", "ORANGE", "ORANGE"],
+      ["ORANGE", "ORANGE", "ORANGE"]
+    ]
+  },
+  "right": {
+    "color": "BLUE",
+    "values": [
+      ["BLUE", "BLUE", "BLUE"],
+      ["BLUE", "BLUE", "BLUE"],
+      ["BLUE", "BLUE", "BLUE"]
+    ]
+  },
+  "top": {
+    "color": "YELLOW",
+    "values": [
+      ["YELLOW", "YELLOW", "YELLOW"],
+      ["YELLOW", "YELLOW", "YELLOW"],
+      ["YELLOW", "YELLOW", "YELLOW"]
+    ]
+  },
+  "left": {
+    "color": "GREEN",
+    "values": [
+      ["GREEN", "GREEN", "GREEN"],
+      ["GREEN", "GREEN", "GREEN"],
+      ["GREEN", "GREEN", "GREEN"]
+    ]
+  },
+  "back": {
+    "color": "RED",
+    "values": [
+      ["RED", "RED", "RED"],
+      ["RED", "RED", "RED"],
+      ["RED", "RED", "RED"]
+    ]
+  },
+  "bottom": {
+    "color": "WHITE",
+    "values": [
+      ["WHITE", "WHITE", "WHITE"],
+      ["WHITE", "WHITE", "WHITE"],
+      ["WHITE", "WHITE", "WHITE"]
+    ]
+  }
+}
