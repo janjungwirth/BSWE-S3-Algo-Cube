@@ -24,8 +24,12 @@ public class CubeUtils {
     public static CubeColor[][] rotateArrayClockwise(CubeColor[][] array) {
         int length = array.length;
         CubeColor[][] rotated = new CubeColor[length][length];
-        // TODO
-        return array;
+
+        for(int x=0;x<=(array.length-1);x++)
+            for (int y=0;y<=(array[0].length-1);y++)
+                rotated[x][y]=array[(array[0].length-1)-y][x];
+
+        return rotated;
     }
 
     /**
@@ -37,8 +41,12 @@ public class CubeUtils {
     public static CubeColor[][] rotateArrayCounterClockwise(CubeColor[][] array) {
         int length = array.length;
         CubeColor[][] rotated = new CubeColor[length][length];
-        // TODO
-        return array;
+
+        for(int x=0;x<=(array.length-1);x++)
+            for (int y=0;y<=(array[0].length-1);y++)
+                rotated[(array[0].length-1)-y][x]=array[x][y];
+
+        return rotated;
     }
 
     /**
@@ -50,8 +58,10 @@ public class CubeUtils {
     public static CubeColor[] inverseArray(CubeColor[] array) {
         int length = array.length;
         CubeColor[] inverse = new CubeColor[length];
-        // TODO
-        return array;
+        for(int i=length-1; i>=0;i--){
+            inverse[i]=array[(length-1)-i];
+        }
+        return inverse;
     }
 
     public static String[] getBlankSpace(final int size) {
